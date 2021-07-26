@@ -1,0 +1,192 @@
+/**/$container-xxl:             1240px;
+/**/$container-xxxl:            1640px;
+/**/$body_bg_color:             #114038;
+/**/$btn_bg_color:              #BDADDA;
+/**/$btn_bg_color_hover:        #C4A4FF;
+/**/$btn_bg_color_active:       #C4A4FF;
+/**/$bg_dark_1:                 #2D5252;
+/**/$bg_light_1:                #D3BEF8;
+/**/$bg_light_2:                #ACFFF1;
+/**/$bg_light_3:                #F6EFDF;
+/**/$bg_light_4:                #E8E1DF;
+/**/$font_color:                #fff;
+/**/$font_color2:               $body_bg_color;
+/**/$font_color3:               #FDD3CA;
+$font_family:               "Spartan", sans-serif;
+/**/$font_weight:               300;
+/**/$font_size:                 18px;
+/**/$font_size_mobile:          13px;
+/**/$body_mb:                   200px;
+/**/$body_mb_lg:                100px;
+/**/$body_mb_xs:                100px;
+$font_family2:              "Poppins", sans-serif;
+/**/$link_txt_family:           $font_family;
+/**/$link_color:                $bg_light_3;
+/**/$link_hover_color:          #C4A4FF;
+/**/$link_active_color:         $link_hover_color;
+/**/$link_hover_color1:         #bd7667;
+/**/$link_hover_color2:         $link_hover_color;
+/**/$footer_height:             200px;
+/**/$footer_height_lg:          279px;
+/**/$footer_height_xs:          326px;
+/**/$footer_text_color:         $font_color;
+/**/$footer_text_color_hover:   $link_hover_color;
+/**/$footer_text_color_active:  $link_hover_color;
+
+//Form
+$input_bg:                  $bg_light_3;
+$input_hover_bg:            #fff;
+$input_txt_family:          $font_family;
+$input_txt_color:           $font_color2;
+$input_hover_txt_color:     $font_color2;
+$input_placeholder_color:   $font_color2;
+$input_txt_xs_size:         13px;
+$input_txt_xs_lh:           1.5;
+$input_txt_size:            21px;
+$input_txt_lh:              1.5;
+$input_border_color:        $input_bg;
+$input_border:              none;
+$input_hover_border:        $input_border;
+$input_border_radius:       10px;
+$textarea_border_radius:    10px;
+$textarea_border_radius_mob:10px;
+
+//Custom Checkbox
+$checkbox_xs_width:             38px;
+$checkbox_xs_height:            20px;
+$checkbox_xs_space_text:        19px;
+$checkbox_xs_padding_left:      $checkbox_xs_width + $checkbox_xs_space_text;
+$checkbox_xs_left:              -$checkbox_xs_width - $checkbox_xs_space_text;
+$checkbox_xs_top:               8px;
+$checkbox_xs_marker_width:      38px;
+$checkbox_xs_marker_height:     20px;
+$checkbox_xs_marker_top:        11px;
+$checkbox_xs_marker_left:       $checkbox_xs_left + 3px;
+
+$checkbox_width:                52px;
+$checkbox_height:               27px;
+$checkbox_space_text:           27px;
+$checkbox_padding_left:         $checkbox_width + $checkbox_space_text;
+$checkbox_left:                 -$checkbox_width - $checkbox_space_text;
+$checkbox_top:                  11px;
+$checkbox_marker_width:         52px;
+$checkbox_marker_height:        27px;
+$checkbox_marker_top:           16px;
+$checkbox_marker_left:          $checkbox_left + 5px;
+
+$checkbox_txt_family:           $font_family;
+$checkbox_txt_color:            $font_color;
+$checkbox_txt_xs_size:          16px;
+$checkbox_txt_size:             19px;
+$checkbox_txt_xs_lh:            30px;
+$checkbox_txt_lh:               36px;
+$checkbox_bg_color:             transparent;
+$checkbox_checked_bg_color:     $btn_bg_color;
+$checkbox_border:               1px solid #000;
+$checkbox_checked_border_color: #000;
+$checkbox_active_bg_color:      transparent;
+$checkbox_bg_icon:              '';
+$checkbox_bg_icon_checked:      '../img/icons/checkbox-checked.svg';
+$checkbox_checked_marker_color: #000;
+
+//Custom RadioButton
+$radio_xs_width:             26px;
+$radio_xs_height:            26px;
+$radio_xs_marker_width:      12px;
+$radio_xs_marker_height:     12px;
+$radio_xs_space_text:        18px;
+$radio_xs_left:              -$radio_xs_width - $radio_xs_space_text;
+$radio_xs_top:               -1px;
+$radio_xs_padding_left:      $radio_xs_width + $radio_xs_space_text;
+$radio_xs_marker_top:        6px;
+$radio_xs_marker_left:       $radio_xs_left + 7px;
+
+$radio_width:                44px;
+$radio_height:               44px;
+$radio_marker_width:         20px;
+$radio_marker_height:        20px;
+$radio_space_text:           30px;
+$radio_left:                 -$radio_width - $radio_space_text;
+$radio_top:                  -4px;
+$radio_padding_left:         $radio_width + $radio_space_text;
+$radio_marker_top:           8px;
+$radio_marker_left:          $radio_left + 12px;
+$radio_checked_marker_color: $btn_bg_color;
+
+$radio_txt_family:           $font_family;
+$radio_txt_weight:           300;
+$radio_txt_color:            $font_color;
+$radio_txt_xs_size:          13px;
+$radio_txt_size:             21px;
+$radio_txt_xs_lh:            1.5;
+$radio_txt_lh:               1.5;
+$radio_bg_color:             $input_bg;
+$radio_checked_bg_color:     $radio_bg_color;
+$radio_border:               none;
+$radio_hover_border:         $radio_border;
+$radio_checked_border_color: $radio_bg_color;
+$radio_active_bg_color:      $radio_bg_color;
+$radio_bg_icon:              "data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='-4 -4 8 8'%3E%3Ccircle r='4' fill='%234E464F'/%3E%3C/svg%3E";
+
+//Custom Switch
+$switch_bg_width: 61px;
+$switch_bg_height: 22px;
+$switch_bg_width_mob: 36px;
+$switch_bg_height_mob: 13px;
+$switch_bg_border_radius: 100px;
+$switch_dot_size_w: 41px;
+$switch_dot_size_h: 41px;
+$switch_dot_size_w_mob: 24px;
+$switch_dot_size_h_mob: 24px;
+$switch_dot_border_radius: 100%;
+$switch_bg_color: $input_bg;
+$switch_bg_color_active: $input_bg;
+$switch_bg_color_checked: $input_bg;
+$switch_dot_color: #345852;
+$switch_dot_color_active: $switch_dot_color;
+$switch_dot_color_checked: $btn_bg_color;
+$switch_border_color: #000;
+$switch_border: none;
+$switch_border_active: none;
+$switch_dot_border: none;
+$switch_txt: '';
+$switch_txt_color: #000;
+$switch_txt_color_checked: #000;
+$switch_dot_txt_1: 'On';
+$switch_dot_txt_0: 'Off';
+$switch_dot_txt_size_mob: 16px;
+$switch_dot_txt_size: 20px;
+$switch_dot_txt_padding_mob: 0;
+$switch_dot_txt_padding: 0;
+$switch_dot_txt_color: $font_color;
+$switch_dot_txt_color_checked: $font_color;
+$switch_margin_right: 0;
+$switch_margin_right_mob: 0;
+$switch_margin_right_inline: 47px;
+$switch_margin_right_inline_mob: 25px;
+$switch_margin_top: 48px;
+$switch_margin_top_mob: 25px;
+$switch_label_fontfamily: $font_family;
+$switch_label_fontweight: 300;
+$switch_label_fontsize: $font_size;
+$switch_label_fontsize_mob: $font_size_mobile;
+$switch_label_lineheight: 45px;
+$switch_label_lineheight_mob: 25px;
+
+//Bootstrap container width
+@function get-container-width($key: 'md') {
+  @return map-get($container-max-widths, $key);
+}
+
+//User List page wider
+$user_list_wider:           160px;
+$user_list_item_breakpoint: 992px;
+$user_list_title_color:     $font_color2;
+
+/**/
+@mixin circle($diameter, $background-color) {
+  width: $diameter;
+  height: $diameter;
+  background-color: $background-color;
+  border-radius: 100%;
+}

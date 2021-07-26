@@ -1,0 +1,91 @@
+<script>
+    let preloader = document.body.querySelector('#page-preloader');
+    let searchTime = 4000; // time for search women
+    let progressSpeed1 = 30; // time for progress bar
+    document.addEventListener('DOMContentLoaded', initPage);
+
+    function initPage() {
+        let displays = document.querySelectorAll('.display');
+        displays.forEach(display => display.style.display = 'none');
+        showAreaIndex();
+        initEvents();
+    }
+
+    function initEvents() {
+        let btnIndex = document.querySelectorAll('.btn-index');
+        btnIndex.forEach(function(btn){ // for mobile and desktop buttons
+            btn.addEventListener('click', handlerClickBtnIndex);
+        });
+    }
+
+    function handlerClickBtnIndex(e) {
+        hideAreaIndex();
+        showAreaSearch();
+        setTimeout(goToLogin, searchTime);
+    }
+
+    function showAreaIndex() {
+        document.body.classList.add('body_bg');
+        document.querySelector('.display.display_01').style.display = 'block';
+    }
+    function hideAreaIndex() {
+        //document.body.classList.remove('body_bg');
+        document.querySelector('.display.display_01').style.display = 'none';
+    }
+
+    function showAreaSearch() {
+        document.querySelector('.display.display_02').style.display = 'block';
+        loading();
+    }
+    function hideAreaSearch() {
+        document.querySelector('.display.display_02').style.display = 'none';
+    }
+
+    function goToLogin() {
+        // preloaderOn();
+        // setTimeout(hideAreaIndex, 500);
+        // setTimeout(showAreaLogin, 500);
+        hideAreaSearch();
+        showAreaLogin();
+    }
+
+    function loading() {
+        let progressBar1 = document.querySelector('.search-progress .progress-bar');
+        progressValue(progressBar1, progressSpeed1);
+    }
+
+    function progressValue(progressBar, progressSpeed) {
+        let titles = document.querySelectorAll('.search-progress .search-progress__title .search-progress__span');
+        let tickValue = progressBar.getAttribute('aria-valuemin');
+        let endValue = progressBar.getAttribute('aria-valuemax');
+        let timerId = setTimeout(function run() {
+            progressBar.style.width = tickValue + '%';
+            progressBar.setAttribute('aria-valuenow', tickValue);
+            tickValue++;
+            if(tickValue == 30) {
+                titles.forEach(title => title.style.display = 'none');
+                titles[1].style.display = 'inline';
+            }
+            if(tickValue == 70) {
+                titles.forEach(title => title.style.display = 'none');
+                titles[2].style.display = 'inline';
+            }
+            if(tickValue <= endValue) {
+                timerId = setTimeout(run, progressSpeed);
+            }
+        }, progressSpeed);
+    }
+
+    function showAreaLogin() {
+        document.querySelector('.display.display_03').style.display = 'block';
+        //setTimeout(preloaderOff, 500);
+    }
+
+    function preloaderOn() {
+        preloader.classList.remove('done');
+    }
+    function preloaderOff() {
+        preloader.classList.add('done');
+    }
+
+</script>

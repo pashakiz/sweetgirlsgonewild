@@ -1,0 +1,238 @@
+.display {}
+.display_01 {}
+.display_02 {}
+.display_03 {}
+
+.btn_display-01 {
+  @media (min-width: 1200px) {
+    margin-left: auto;
+  }
+}
+
+.firstscreen {
+  height: 635px;
+  position: relative;
+  @media (min-width: 992px) {
+    height: 650px;
+  }
+  @media (min-width: 1200px) {
+    height: 888px;
+  }
+  @media (min-width: 1500px) {
+    height: 999px;
+  }
+  @media (min-width: 1920px) {
+    height: 1032px;
+  }
+}
+
+.firstscreen__bg {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  width: 100%;
+  height: 100%;
+  z-index: -100;
+}
+
+.bg-video {
+  position: absolute;
+  right: 0;
+  bottom: 0;
+  width: 100%;
+  height: 100%;
+  min-width: 100%;
+  min-height: 100%;
+  -o-object-fit: cover;
+  object-fit: cover;
+}
+
+.firstscreen__content {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  width: 100%;
+  height: 100%;
+  z-index: 10;
+  background-color: rgba($body_bg_color, 0.65);
+  @media (min-width: 1200px) {
+    background-color: transparent;
+    background-image: url('../img/bg/bg.svg');
+    background-repeat: no-repeat;
+    background-position: 0 0;
+    background-size: 70%;
+  }
+  @media (min-width: 1500px) {
+    background-size: 63%;
+  }
+  @media (min-width: 1920px) {
+    background-size: 50%;
+  }
+}
+
+.firstscreen__header {
+  width: 100%;
+  max-width: 470px;
+  margin: 0 auto;
+  @media (min-width: 1200px) {
+    max-width: 538px;
+    margin: 0;
+    position: relative;
+    z-index: 1;
+  }
+  @media (min-width: 1500px) {
+    max-width: 538px;
+  }
+  @media (min-width: 1920px) {
+    max-width: 538px;
+  }
+}
+.firstscreen__header-inner {}
+
+.firstscreen__content1 {
+  width: 100%;
+  @media (min-width: 992px) {}
+  @media (min-width: 1200px) {}
+  @media (min-width: 1500px) {}
+  @media (min-width: 1920px) {}
+}
+.firstscreen__content2 {
+  display: none;
+  width: 100%;
+  @media (min-width: 992px) {}
+  @media (min-width: 1200px) {}
+  @media (min-width: 1500px) {}
+  @media (min-width: 1920px) {}
+}
+.firstscreen__content3 {
+  display: none;
+  width: 100%;
+  @media (min-width: 992px) {}
+  @media (min-width: 1200px) {}
+  @media (min-width: 1500px) {}
+  @media (min-width: 1920px) {}
+}
+
+.secondscreen {
+  position: relative;
+  color: $font_color;
+  margin: 44px 0 0;
+  @media (min-width: 1200px) {
+    margin: 92px 0 0;
+  }
+  &::before {
+    content: '';
+    width: 100%;
+    height: 53px;
+    background-image: url('../img/bg/bg-mob-bottom.svg');
+    background-repeat: no-repeat;
+    background-position: 50% 100%;
+    background-size: 100%;
+    position: absolute;
+    top: -95px;
+    z-index: 15;
+    @media (min-width: 1200px) {
+      display: none;
+      content: none;
+    }
+  }
+}
+
+.search-progress {
+  &.progress {
+    width: 100%;
+    height: 46px;
+    background-color: #fff;
+    border-radius: 33px;
+    position: relative;
+    @media (min-width: 1200px) {
+      height: 77px;
+    }
+  }
+  .progress-bar {
+    background-color: $bg_light_2;
+    border-radius: 33px;
+    border: none;
+    transition: width 0.2s linear;
+  }
+  .search-progress__title {
+    text-transform: uppercase;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, 0);
+    z-index: 10;
+    color: $body_bg_color;
+    font-family: $font_family2;
+    font-weight: 400;
+    font-style: italic;
+    font-size: 20px;
+    @media (min-width: 1200px) {
+      font-size: 24px;
+      transform: translate(-50%, -2px);
+    }
+  }
+}
+
+.index-btn-area {
+  margin: 0 auto 32px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  position: relative;
+  @media (min-width: 1200px) {
+    margin: 0 auto;
+    z-index: 2;
+  }
+}
+
+@keyframes bits {
+  from {
+    transform: scale(1.05);
+  }
+  to {
+    transform: scale(1);
+  }
+}
+
+.btn-index {
+  //animation: 2s bits infinite linear;
+}
+
+.circle {
+  @media (min-width: 1200px) {
+    &.circle1 {
+      @include circle(20px, $btn_bg_color);
+    }
+    &.circle2 {
+      @include circle(60px, $btn_bg_color);
+    }
+  }
+}
+
+
+.collage {
+  width: 100%;
+  margin: 0 0 33px;
+  position: relative;
+  @media (min-width: 576px) {;
+    margin: 0 0 60px;
+  }
+  @media (min-width: 1200px) {
+    margin: -69px 0 119px;
+    position: relative;
+  }
+}
+
+.collage__img {
+  width: 100%;
+  height: auto;
+  @media (min-width: 1200px) {
+    position: relative;
+    bottom: -1px;
+  }
+}
