@@ -1,0 +1,54 @@
+/* font-family: "Spartan"; */
+/* font-family: "Poppins"; */
+
+@font-face {
+    font-family: "Spartan"; /*Light*/
+    src: url("../fonts/Spartan/Spartan-Light.eot");
+    src: url("../fonts/Spartan/Spartan-Light.eot?#iefix")format("embedded-opentype"),
+    url("../fonts/Spartan/Spartan-Light.woff") format("woff"),
+    url("../fonts/Spartan/Spartan-Light.ttf") format("truetype"),
+    url("../fonts/Spartan/Spartan-Light.svg#Spartan-Light") format("svg");
+    font-style: normal;
+    font-weight: 300;
+}
+@font-face {
+    font-family: "Spartan"; /*Regular*/
+    src: url("../fonts/Spartan/Spartan-Regular.eot");
+    src: url("../fonts/Spartan/Spartan-Regular.eot?#iefix")format("embedded-opentype"),
+    url("../fonts/Spartan/Spartan-Regular.woff") format("woff"),
+    url("../fonts/Spartan/Spartan-Regular.ttf") format("truetype"),
+    url("../fonts/Spartan/Spartan-Regular.svg#Spartan-Regular") format("svg");
+    font-style: normal;
+    font-weight: 400;
+}
+@font-face {
+    font-family: "Spartan"; /*Medium*/
+    src: url("../fonts/Spartan/Spartan-Medium.eot");
+    src: url("../fonts/Spartan/Spartan-Medium.eot?#iefix")format("embedded-opentype"),
+    url("../fonts/Spartan/Spartan-Medium.woff") format("woff"),
+    url("../fonts/Spartan/Spartan-Medium.ttf") format("truetype"),
+    url("../fonts/Spartan/Spartan-Medium.svg#Spartan-Medium") format("svg");
+    font-style: normal;
+    font-weight: 500;
+}
+@font-face {
+  font-family: "Spartan"; /*Bold*/
+  src: url("../fonts/Spartan/Spartan-Bold.eot");
+  src: url("../fonts/Spartan/Spartan-Bold.eot?#iefix")format("embedded-opentype"),
+  url("../fonts/Spartan/Spartan-Bold.woff") format("woff"),
+  url("../fonts/Spartan/Spartan-Bold.ttf") format("truetype"),
+  url("../fonts/Spartan/Spartan-Bold.svg#Spartan-Bold") format("svg");
+  font-style: normal;
+  font-weight: 700;
+}
+
+@font-face {
+    font-family: "Poppins"; /*Bold*/
+    src: url("../fonts/LaLuxesSerif/Poppins-Bold.eot");
+    src: url("../fonts/LaLuxesSerif/Poppins-Bold.eot?#iefix")format("embedded-opentype"),
+    url("../fonts/LaLuxesSerif/Poppins-Bold.woff") format("woff"),
+    url("../fonts/LaLuxesSerif/Poppins-Bold.ttf") format("truetype"),
+    url("../fonts/LaLuxesSerif/Poppins-Bold.svg#Poppins-Bold") format("svg");
+    font-style: normal;
+    font-weight: 700;
+}
