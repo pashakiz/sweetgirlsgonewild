@@ -114,24 +114,23 @@ h1 {
 
 h2 {
   font-family: $font_family2;
-  font-weight: 400;
-  font-size: 36px;
-  line-height: 58px;
-  color: $font_color;
-  margin-bottom: 65px;
+  font-weight: 700;
+  font-size: 32px;
+  line-height: 60px;
+  color: $font_color2;
+  margin-bottom: 56px;
   margin-top: 0;
   text-transform: uppercase;
   text-align: center;
   @media (min-width: 992px) {
-    font-size: 64px;
-    line-height: 95px;
-    margin-bottom: 110px;
-    text-transform: none;
+    font-size: 61px;
+    line-height: 90px;
+    margin-bottom: 80px;
   }
   @media (min-width: 1200px) {
-    font-size: 64px;
-    line-height: 95px;
-    margin-bottom: 130px;
+    font-size: 61px;
+    line-height: 90px;
+    margin-bottom: 113px;
   }
   .h2_row {
     font-size: 28px;
@@ -189,18 +188,19 @@ h2 {
 }
 h3 {
   font-family: $font_family;
-  font-weight: 300;
-  color: $font_color;
-  font-size: 19px;
+  font-weight: 500;
+  color: $font_color3;
+  font-size: 16px;
   line-height: 24px;
-  margin-top: 64px;
-  margin-bottom: 43px;
+  margin-top: 60px;
+  margin-bottom: 38px;
+  text-transform: uppercase;
   @media (min-width: 992px) {
     text-align: center;
-    font-size: 33px;
+    font-size: 21px;
     line-height: 1;
     margin-top: 115px;
-    margin-bottom: 63px;
+    margin-bottom: 42px;
   }
   @media (min-width: 1200px) {}
 }
@@ -211,7 +211,7 @@ p {
   line-height: 35px;
   margin-bottom: 1.5rem;
   @media (min-width: 992px) {
-    line-height: 50px;
+    line-height: 45px;
   }
   b {
     &.bmark {
