@@ -4,102 +4,48 @@
   justify-content: center;
   position: relative;
   .logo__img {
-    width: 43px;
-    height: 20px;
-    margin: 0 10px 0;
+    width: 21px;
+    height: 19px;
+    margin: 0 8px 0;
     background-repeat: no-repeat;
     background-position: 50%;
     background-size: 100%;
     background-image: url('../img/icons/logo.svg');
     @media (min-width: 992px) {
-      width: 74px;
-      height: 34px;
-      margin: 8px 20px 0;
+      width: 47px;
+      height: 42px;
+      margin: 8px 19px 0;
     }
   }
   .logo__txt {
-    text-transform: uppercase;
-    font-family: $font_family2;
-    font-weight: 400;
-    color: $font_color;
-    font-size: 16px;
+    font-family: $font_family;
+    font-weight: 500;
+    color: $font_color2;
+    font-size: 14px;
     @media (min-width: 992px) {
-      letter-spacing: 5px;
-      font-size: 32px;
+      font-size: 26px;
     }
   }
 }
 
 .logo_main {
-  flex-direction: column;
-  margin: 64px 0 50px;
-  @media (min-width: 992px) {
-    margin: 64px 0 50px;
-  }
-  @media (min-width: 1200px) {
-    flex-direction: row;
-    justify-content: flex-start;
-    margin: 133px 0 108px;
-  }
-  @media (min-width: 1500px) {
-    margin: 133px 0 108px;
-  }
-  @media (min-width: 1920px) {
-    margin: 133px 0 108px;
-  }
   .logo__img {
-    width: 74px;
-    height: 34px;
-    margin: 0 0 12px 0;
+    width: 24px;
+    height: 21px;
+    margin: 0 8px 0;
     @media (min-width: 992px) {
-      width: 74px;
-      height: 34px;
-    }
-    @media (min-width: 1200px) {
-      margin: 8px 20px 0;
+      width: 55px;
+      height: 49px;
+      margin: 8px 22px 0;
     }
   }
   .logo__txt {
-    font-size: 17px;
-    line-height: 28px;
-    text-align: center;
-    letter-spacing: 3px;
-    @media (min-width: 992px) {}
-    @media (min-width: 1200px) {
-      font-size: 32px;
-      text-align: left;
-      line-height: 44px;
-      letter-spacing: 5px;
-    }
-    @media (min-width: 1500px) {
-      font-size: 32px;
-    }
-    @media (min-width: 1920px) {
-      font-size: 32px;
-    }
-  }
-}
-
-.logo_footer {
-  margin: 0 0 40px;
-  @media (min-width: 992px) {
-    margin: 0 0 55px;
-  }
-  @media (min-width: 1920px) {
-    margin: 0;
-  }
-  .logo__img {
-    width: 74px;
-    height: 34px;
-  }
-  .logo__txt {
-    display: none;
+    font-size: 15px;
     @media (min-width: 992px) {
-      display: block;
+      font-size: 31px;
     }
   }
 }
-
 
 @keyframes heartspin {
   from {

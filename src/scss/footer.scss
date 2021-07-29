@@ -1,11 +1,12 @@
 .footer {
-  background-color: $body_bg_color;
+  background-color: $bg_dark_1;
   a.footer__link {
     font-family: $font_family2;
-    font-weight: 400;
+    font-weight: 700;
     color: $footer_text_color;
-    font-size: 13px;
+    font-size: 16px;
     line-height: 1;
+    text-transform: uppercase;
   }
   a.footer__link:hover {
     color: $footer_text_color_hover;
@@ -17,13 +18,12 @@
   }
   a.footer__link {
     + a.footer__link {
-      margin-top: 28px;
+      margin-top: 42px;
     }
   }
   @media (min-width: 992px) {
     a.footer__link {
-      font-size: 18px;
-      line-height: 24px;
+      //font-size: 31px;
     }
     a.footer__link {
       margin: 0;
@@ -32,23 +32,32 @@
         margin-left: 55px;
       }
     }
-    a.footer__link:nth-child(2) {
-      //margin: 0 35px 0 72px;
+  }
+  @media (min-width: 1200px) {
+    a.footer__link {
+      font-size: 20px;
+    }
+    a.footer__link {
+      + a.footer__link {
+        margin-left: 80px;
+      }
+    }
+  }
+  @media (min-width: 1920px) {
+    a.footer__link {
+      font-size: 31px;
+    }
+    a.footer__link {
+      + a.footer__link {
+        margin-left: 130px;
+      }
     }
   }
 }
 
 .footer__bottom {
-  padding: 76px 0 76px;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
+  padding: 84px 0 84px;
   @media (min-width: 992px) {
-    padding: 76px 0 76px;
-  }
-  @media (min-width: 1920px) {
-    flex-direction: row;
-    justify-content: space-between;
+    padding: 131px 0 117px;
   }
 }

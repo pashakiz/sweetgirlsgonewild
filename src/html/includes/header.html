@@ -16,27 +16,40 @@
 
 </head>
 <body>
+  <!-- DEMO CODE START -->
+  <!-- Showing notify icon for menu -->
+    <script>
+        document.addEventListener('DOMContentLoaded', function(e) {
+            setTimeout(function () {
+                document.body.querySelector('.menu').classList.add('menu_notify');
+            }, 1000);
+        });
+    </script>
+  <!-- DEMO CODE END -->
+
 	<header class="header header_page">
 		<div class="container container_xxxl">
 			<div class="header__row header__row_border">
-				<div class="header__row-inline d-flex justify-content-center align-items-center">
+				<div class="header__row-inline d-flex justify-content-between justify-content-xl-center align-items-center">
 					<div class="logo">
             <div class="logo__txt">sweet girls</div>
             <div class="logo__img"></div>
             <div class="logo__txt">gone wild</div>
 					</div>
 					<div class="header__nav-toggle">
-						<div class="notice">180</div>
+            <div class="menu"></div>
 					</div>
 				</div>
 			</div>
-			<div class="header-menu">
-				<div class="header-menu__wrap">
-					<a class="header-menu__item d-flex flex-column flex-lg-row justify-content-center justify-content-lg-end align-items-center" href="#">
-						<div class="header-menu__item-text">Eduard</div>
-						<div class="notice">180</div>
-					</a>
-				</div>
-			</div>
 		</div>
+    <div class="header-menu">
+      <div class="container">
+        <div class="header-menu__wrap">
+          <a class="header-menu__item d-flex flex-column flex-lg-row justify-content-center justify-content-lg-end align-items-center" href="#">
+            <div class="header-menu__item-text">Alexander</div>
+            <div class="notice">1000</div>
+          </a>
+        </div>
+      </div>
+    </div>
 	</header>
