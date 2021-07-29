@@ -266,17 +266,15 @@ a {
   }
 }
 .link2 {
-  font-family: $font_family2;
+  font-family: $font_family;
   font-weight: 400;
   color: $font_color;
-  font-size: 14px;
+  font-size: 16px;
   text-transform: uppercase;
   &:hover {
     color: $link_hover_color2;
   }
   @media (min-width: 992px) {
-    font-family: $font_family;
-    font-weight: 300;
     color: $link_color;
     font-size: 24px;
   }
