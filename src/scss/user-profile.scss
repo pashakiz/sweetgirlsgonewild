@@ -371,22 +371,3 @@
   }
 }
 
-.sticky-footer {
-  body {
-    &.body_bg-profile {
-      $body_mb_mini: 10px;
-      @media (min-width: 1200px) {
-        margin-bottom: $body_mb_mini + $footer_height_lg;
-        .footer {
-          height: $footer_height_lg;
-        }
-      }
-      @media (min-width: 1920px) {
-        margin-bottom: $body_mb_mini + $footer_height;
-        .footer {
-          height: $footer_height;
-        }
-      }
-    }
-  }
-}
