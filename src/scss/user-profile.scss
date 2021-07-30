@@ -1,15 +1,3 @@
-.userprofile-wrap1 {
-  position: relative;
-  height: 585px;
-  @media (min-width: 1200px) {
-    height: 288px;
-  }
-}
-
-.userprofile-wrap2 {
-  position: relative;
-}
-
 .owl-carousel {
   .owl-dots {
     position: absolute;
@@ -44,8 +32,9 @@
 }
 
 .userprofile-mob {
-  margin-bottom: 4px;
+  margin-bottom: 33px;
   position: relative;
+  text-align: center;
 }
 
 .userprofile {
@@ -121,30 +110,72 @@
       position: relative;
     }
   }
+  &.owl-carousel {
+    .owl-dots {
+      position: absolute;
+      right: 0;
+      top: 50%;
+      transform: translateY(-50%);
+      padding: 0 26px 0 0;
+      width: auto;
+      height: 215px;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      @media (min-width: 1200px) {
+        display: none;
+      }
+    }
+    button.owl-dot {
+      display: block;
+      width: 2px;
+      height: 20px;
+      min-width: 2px;
+      min-height: 20px;
+      background-color: #fff;
+      border: none;
+      border-radius: 0;
+      outline: none;
+      + button.owl-dot {
+        margin-left: 0;
+        margin-top: 9px;
+      }
+      &.active {
+        background-color: $btn_bg_color;
+      }
+    }
+    .owl-dots_mini1 {
+      button.owl-dot {
+        height: 8px;
+        min-height: 8px;
+        + button.owl-dot {
+          margin-top: 5px;
+        }
+      }
+    }
+    .owl-dots_mini2 {
+      overflow: hidden;
+      button.owl-dot {
+        width: 1px;
+        min-width: 1px;
+        height: 5px;
+        min-height: 5px;
+        + button.owl-dot {
+          margin-top: 3px;
+        }
+      }
+    }
+  }
 }
 
 .userprofile__btn {
-  position: absolute;
-  bottom: -4px;
-  left: 50%;
-  transform: translateX(-50%);
-  max-width: 335px;
+  transform: translateY(-40px);
+  @media (min-width: 400px) {
+    max-width: 320px;
+  }
   @media (min-width: 992px) {
-    padding: 21px 9px;
-    height: 60px;
-    font-size: 16px;
-  }
-  @media (min-width: 1200px) {
-    max-width: none;
-    position: absolute;
-    bottom: -16px;
-    left: 0;
-    height: 96px;
-    font-size: 26px;
-    padding: 32px 15px;
-    transform: none;
-  }
-  @media (min-width: 1500px) {
+    max-width: 450px;
   }
 }
 
@@ -152,80 +183,43 @@
   width: 100%;
   margin: 0 auto;
   @media (min-width: 400px) {
+    max-width: 320px;
+  }
+  @media (min-width: 992px) {
     max-width: 396px;
   }
   @media (min-width: 1200px) {
-    max-width: 396px;
     margin: 0;
   }
 }
 
-.userprofile__infobg {
+.userprofile__row {
+  color: $font_color3;
+  font-family: $font_family;
+  font-weight: 500;
+  line-height: 1;
+  margin-bottom: 45px;
   text-align: center;
-  color: $font_color;
-  margin-bottom: 50px;
-  border-radius: 22px;
-  padding: 25px 21px 38px;
-  background-color: $btn_bg_color;
   @media (min-width: 1200px) {
     text-align: left;
-    padding: 5px;
-    margin-bottom: 70px;
-    position: relative;
-    z-index: 0;
-  }
-  @media (min-width: 1500px) {
-    padding: 6px;
-  }
-
-}
-
-.userprofile__row {
-  border-left: 1px solid #D2C7E5;
-  border-right: 1px solid #D2C7E5;
-  margin-bottom: 30px;
-  @media (min-width: 1200px) {
-    display: flex;
-    flex-direction: row;
-    justify-content: flex-start;
-    align-items: center;
-    border: none;
-    margin-bottom: 40px;
+    margin-bottom: 49px;
   }
 }
 
 .userprofile__name {
-  font-family: $font_family2;
-  font-weight: 400;
-  font-size: 22px;
-  line-height: 1;
-  margin: 0 0 12px 0;
+  font-size: 20px;
+  margin: 0 0 19px 0;
   text-transform: uppercase;
   @media (min-width: 1200px) {
-    font-size: 33px;
-    margin: 0;
-  }
-}
-
-.userprofile__sep {
-  display: none;
-  @media (min-width: 1200px) {
-    display: block;
-    background-color: $bg_light_2;
-    border-radius: 100%;
-    width: 5px;
-    height: 5px;
-    margin: 0 21px;
+    font-size: 41px;
+    margin: 0 0 26px 0;
   }
 }
 
 .userprofile__loc {
-  font-family: $font_family2;
-  font-weight: 400;
-  font-size: 12px;
-  line-height: 1;
+  font-size: 13px;
   @media (min-width: 1200px) {
-    font-size: 18px;
+    font-size: 21px;
   }
 }
 
@@ -250,190 +244,130 @@
 
 .compatibility {
   &.compatibility_mb {
-    padding-bottom: 40px;
+    padding-bottom: 76px;
     @media (min-width: 1200px) {
-      padding-bottom: 0;
+      padding-bottom: 54px;
     }
   }
-
   .compatibility__chart {
-    + .compatibility__chart {
-      margin-left: 15px;
+    +.compatibility__chart {
+      //margin-left: 25px;
       @media (min-width: $user_list_item_breakpoint) {
-      }
-      @media (min-width: 1200px) {
-        margin-left: 25px;
+        //margin-left: 48px;
       }
     }
   }
-
   .compatibility__progress {
-    position: relative;
-
-    &.progress {
-      width: 69px;
-      height: 21px;
-      background-color: #fff;
-      border-radius: 33px;
+    display: flex;
+    .dotmark {
+      width: 21px;
+      height: 12px;
+      border-radius: 100px;
+      background-color: rgba($btn_bg_color, 0.35);
+      + .dotmark {
+        margin-left: 7px;
+      }
+      @media (min-width: $user_list_item_breakpoint) {
+        width: 29px;
+        height: 16px;
+        + .dotmark {
+          margin-left: 9px;
+        }
+      }
       @media (min-width: 1200px) {
-        width: 137px;
-        height: 41px;
+        width: 29px;
+        height: 16px;
       }
     }
-
-    .progress-bar {
-      background-color: $bg_light_2;
-      border-radius: 33px;
-      border: none;
+    &.progress1 {
+      .dotmark:nth-child(1) {
+        background-color: $btn_bg_color;
+      }
     }
-
-    .compatibility__progress-title {
-      position: absolute;
-      top: 50%;
-      left: 50%;
-      transform: translate(-50%, 0);
-      z-index: 10;
-      color: $body_bg_color;
-      font-family: $font_family2;
-      font-weight: 400;
-      font-style: italic;
-      font-size: 15px;
-      @media (min-width: 1200px) {
-        font-size: 24px;
-        transform: translate(-50%, -2px);
+    &.progress2 {
+      .dotmark:nth-child(1),
+      .dotmark:nth-child(2) {
+        background-color: $btn_bg_color;
+      }
+    }
+    &.progress3 {
+      .dotmark {
+        background-color: $btn_bg_color !important;
       }
     }
   }
-
   .compatibility__title {
-    font-family: $font_family2;
-    color: $font_color;
-    font-weight: 400;
+    font-family: $font_family;
+    color: $font_color3;
+    font-weight: 500;
     font-size: 12px;
-    margin-bottom: 13px;
+    margin-top: 17px;
     text-transform: uppercase;
     text-align: center;
-    @media (min-width: 1200px) {
-      font-size: 23px;
-      margin-bottom: 19px;
-    }
-    @media (min-width: 1200px) {
+    @media (min-width: $user_list_item_breakpoint) {
+      font-size: 18px;
+      margin-top: 21px;
     }
   }
 
-  &.compatibility_list {
-    .compatibility__chart {
-      + .compatibility__chart {
-        margin-left: 5px;
-        @media (min-width: $user_list_item_breakpoint) {
-        }
-        @media (min-width: 1200px) {
-          margin-left: 10px;
-        }
-      }
-    }
+  &.compatibility_list {}
 
-    .compatibility__progress {
-      &.progress {
-        width: 37px;
-        height: 10px;
-        @media (min-width: $user_list_item_breakpoint) {
-          width: 93px;
-          height: 28px;
-        }
-      }
-
-      .compatibility__progress-title {
-        font-size: 7px;
-        transform: translate(-50%, 0);
-        @media (min-width: $user_list_item_breakpoint) {
-          font-size: 17px;
-          transform: translate(-50%, -2px);
-        }
-      }
-    }
-
-    .compatibility__title {
-      font-size: 6px;
-      margin-bottom: 6px;
-      @media (min-width: $user_list_item_breakpoint) {
-        font-size: 16px;
-        margin-bottom: 12px;
-      }
-      @media (min-width: 1200px) {
-      }
-    }
-  }
-
-  &.compatibility_login {
-  }
+  &.compatibility_login {}
 }
 
 .user-profile-title {
-  font-family: $font_family2;
-  color: $font_color2;
-  font-weight: 400;
-  font-size: 22px;
-  margin-bottom: 27px;
+  font-family: $font_family;
+  color: $font_color3;
+  font-weight: 500;
+  font-size: 15px;
+  margin-bottom: 25px;
+  text-align: center;
   text-transform: uppercase;
-  @media (min-width: 992px) {
-    color: $font_color2;
-    font-size: 32px;
-    margin-bottom: 18px;
-  }
-  @media (min-width: 1200px) {
-    font-size: 29px;
+  @media (min-width: 992px) {}
+  @media (min-width: 1200px) {}
+  .user-profile-title_about {
+    font-size: 19px;
+    margin-bottom: 35px;
+    @media (min-width: 992px) {}
+    @media (min-width: 1200px) {}
   }
 }
 
 .user-profile-about {
-  padding: 0;
   text-align: center;
   font-size: 13px;
   position: relative;
-
-  p {
-    color: $font_color2;
-    line-height: 36px;
-  }
-
   @media (min-width: 992px) {
-    padding: 0;
     font-size: 14px;
-    p {
-      color: $font_color2;
-      line-height: 36px;
-    }
   }
   @media (min-width: 1200px) {
     text-align: left;
+    margin-bottom: 40px;
   }
-
-  .user-profile-about__title {
-    line-height: 30px;
-    margin: 0 0 30px;
+  p {
+    color: $font_color;
+    line-height: 36px;
     @media (min-width: 992px) {
-    }
-    @media (min-width: 1200px) {
-      margin: 0 0 37px;
-      line-height: 44px;
+      color: $font_color3;
+      line-height: 36px;
     }
   }
 }
 
 .user-profile-gallery {
-  margin-bottom: 22px;
+  margin: 45px 0 20px;
   flex-wrap: wrap;
-
   .user-profile-gallery__item {
-    width: 20%;
-    border-radius: 50%;
+    width: 111px;
+    height: 144px;
+    border-radius: 100px;
     overflow: hidden;
     cursor: pointer;
-    margin-bottom: 5%;
+    margin: 0;
   }
-
   .user-profile-gallery__img {
+    width: 100%;
+    height: auto;
   }
 }
 

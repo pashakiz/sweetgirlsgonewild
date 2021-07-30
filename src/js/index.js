@@ -85,6 +85,13 @@ $(function () {
 
     //slider (Profile gallery)
     owlInitProfile('.up-slider');
+    owlInit('.user-profile-gallery', {
+      loop: false,
+      dots: false,
+      items: 7,
+      margin: 22
+    });
+    resizeOwlDots('.up-slider');
 
     //gallery on desktop
     $('.user-profile-gallery').on('click', '.user-profile-gallery__img', function () {
@@ -93,6 +100,19 @@ $(function () {
     });
 
   });
+
+  //resize owl dots to fit them
+  function resizeOwlDots(el_class) {
+    const slider = document.querySelector(el_class);
+    const slides = slider.querySelectorAll('.slide');
+    const dots = slider.querySelector('.owl-dots');
+    if (slides.length > 7 && slides.length <= 15) {
+      dots.classList.add('owl-dots_mini1');
+    }
+    if (slides.length > 15) {
+      dots.classList.add('owl-dots_mini2');
+    }
+  }
 
   //init owl carousel for custom screen width
   function owlInitFor(el_class, compare, breakpoint, options) {
