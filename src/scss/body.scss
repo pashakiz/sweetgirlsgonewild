@@ -10,7 +10,13 @@ body {
   }
 
   &.body_bg {
-    background-color: $btn_bg_color;
+    background-color: $bg_dark_1;
+    @media (min-width: 1200px) {
+      background-image: url('../img/bg/bg.svg');
+      background-repeat: no-repeat;
+      background-position: 50% 0;
+      background-size: 100%;
+    }
   }
 }
 
@@ -31,7 +37,14 @@ body {
       max-width: $container-xxxl + $grid-gutter-width;
     }
   }
-  &.container_index {}
+  &.container_index {
+    @media (min-width: 1500px) {
+      max-width: $container-xxl + $grid-gutter-width;
+    }
+    @media (min-width: 1920px) {
+      max-width: $container-xxxl + $grid-gutter-width;
+    }
+  }
   &.container_settings {
     @media (min-width: 1200px) {
       padding-left: ($grid-gutter-width/2) + 94px;

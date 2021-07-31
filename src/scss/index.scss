@@ -10,31 +10,49 @@
 }
 
 .firstscreen {
-  height: 635px;
+  height: 621px;
   position: relative;
   @media (min-width: 992px) {
-    height: 650px;
+    height: 621px;
   }
   @media (min-width: 1200px) {
-    height: 888px;
+    height: 640px;
   }
   @media (min-width: 1500px) {
-    height: 999px;
+    height: 770px;
   }
   @media (min-width: 1920px) {
-    height: 1032px;
+    height: 941px;
   }
 }
 
 .firstscreen__bg {
   position: absolute;
-  top: 0;
+  top: 74px;
   left: 0;
   right: 0;
   bottom: 0;
   width: 100%;
-  height: 100%;
+  height: 547px;
   z-index: -100;
+  @media (min-width: 1200px) {
+    left: auto;
+    top: 128px;
+    width: 660px;
+    height: 506px;
+  }
+  @media (min-width: 1500px) {
+    left: auto;
+    top: 128px;
+    width: 830px;
+    height: 636px;
+  }
+  @media (min-width: 1920px) {
+    left: auto;
+    top: 128px;
+    width: 1060px;
+    height: 813px;
+  }
 }
 
 .bg-video {
@@ -51,64 +69,94 @@
 
 .firstscreen__content {
   position: absolute;
-  top: 0;
+  top: 74px;
   left: 0;
   right: 0;
   bottom: 0;
   width: 100%;
-  height: 100%;
+  height: 547px;
   z-index: 10;
-  background-color: rgba($body_bg_color, 0.65);
+  background-color: rgba(#56076D, 0.36);
   @media (min-width: 1200px) {
+    top: 0;
     background-color: transparent;
-    //background-image: url('../img/bg/bg.svg');
-    background-repeat: no-repeat;
-    background-position: 0 0;
-    background-size: 70%;
-  }
-  @media (min-width: 1500px) {
-    background-size: 63%;
-  }
-  @media (min-width: 1920px) {
-    background-size: 50%;
   }
 }
 
 .firstscreen__header {
   width: 100%;
-  max-width: 470px;
-  margin: 0 auto;
+  background-image: url('../img/bg/bg-header-mob.svg');
+  background-repeat: no-repeat;
+  background-position: 50% 0;
+  background-size: 100%;
+  height: 90px;
+  padding: 35px 0 0;
+  margin: 0 0 43px;
+  position: relative;
+  z-index: 20;
+  @media (min-width: 992px) {
+    height: 140px;
+  }
   @media (min-width: 1200px) {
-    max-width: 538px;
+    position: static;
+    background: none;
+    height: auto;
     margin: 0;
-    position: relative;
-    z-index: 1;
+    padding: 150px 0 40px;
   }
   @media (min-width: 1500px) {
-    max-width: 538px;
+    padding: 165px 0 63px;
   }
   @media (min-width: 1920px) {
-    max-width: 538px;
+    padding: 207px 0 89px;
   }
 }
 .firstscreen__header-inner {}
 
-.firstscreen__content1 {
+.firstscreen__info {
+  width: 100%;
+  margin: 51px auto 0;
+  max-width: 452px;
+  @media (min-width: 992px) {
+    margin: 98px auto 0;
+    max-width: 452px;
+  }
+  @media (min-width: 1200px) {
+    margin: 0;
+    max-width: 452px;
+  }
+  @media (min-width: 1500px) {
+    max-width: 452px;
+  }
+  @media (min-width: 1920px) {
+    max-width: 452px;
+  }
+}
+.firstscreen__info1 {
   width: 100%;
   @media (min-width: 992px) {}
   @media (min-width: 1200px) {}
   @media (min-width: 1500px) {}
   @media (min-width: 1920px) {}
 }
-.firstscreen__content2 {
+.firstscreen__info2 {
   display: none;
   width: 100%;
-  @media (min-width: 992px) {}
-  @media (min-width: 1200px) {}
-  @media (min-width: 1500px) {}
-  @media (min-width: 1920px) {}
+  max-width: 452px;
+  @media (min-width: 992px) {
+    max-width: 452px;
+  }
+  @media (min-width: 1200px) {
+    max-width: 499px;
+  }
+  @media (min-width: 1500px) {
+    max-width: 499px;
+  }
+  @media (min-width: 1920px) {
+    max-width: 499px;
+  }
 }
-.firstscreen__content3 {
+.firstscreen__info3 {
   display: none;
   width: 100%;
   @media (min-width: 992px) {}
@@ -120,24 +168,24 @@
 .secondscreen {
   position: relative;
   color: $font_color;
-  margin: 44px 0 0;
+  padding: 70px 0 0;
+  background-image: url('../img/bg/bg-secondscreen-mob.svg');
+  background-repeat: no-repeat;
+  background-position: 50% 0;
+  background-size: 100%;
   @media (min-width: 1200px) {
-    margin: 92px 0 0;
+    padding: 228px 0 0;
+    background: none;
   }
-  &::before {
-    content: '';
-    width: 100%;
-    height: 53px;
-    //background-image: url('../img/bg/bg-mob-bottom.svg');
-    background-repeat: no-repeat;
-    background-position: 50% 100%;
-    background-size: 100%;
-    position: absolute;
-    top: -95px;
-    z-index: 15;
-    @media (min-width: 1200px) {
-      display: none;
-      content: none;
+  @media (min-width: 1500px) {
+    padding: 228px 0 0;
+  }
+  @media (min-width: 1920px) {
+    .pl-xl-5 {
+      padding-left: 15px!important;
+    }
+    .pr-xl-5 {
+      padding-right: 15px!important;
     }
   }
 }
