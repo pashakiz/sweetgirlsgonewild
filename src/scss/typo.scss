@@ -1,6 +1,6 @@
 h1 {
   font-family: $font_family2;
-  font-weight: 400;
+  font-weight: 700;
   font-size: 51px;
   line-height: 45px;
   color: $font_color;
@@ -21,27 +21,31 @@ h1 {
     }
   }
   &.h1_index {
-    color: $font_color;
-    font-weight: 400;
-    font-size: 29px;
-    line-height: 58px;
-    margin: 0 0 58px;
+    color: $font_color2;
+    font-weight: 700;
+    font-size: 42px;
+    line-height: 60px;
+    margin: 0 0 31px;
     text-align: center;
+    text-transform: uppercase;
     @media (min-width: 1200px) {
+      width: 671px;
       text-align: left;
       font-size: 50px;
-      line-height: 90px;
+      line-height: 78px;
       margin: 0 0 75px;
     }
     @media (min-width: 1500px) {
+      width: 671px;
       font-size: 57px;
-      line-height: 103px;
+      line-height: 95px;
       margin: 0 0 75px;
     }
     @media (min-width: 1920px) {
-      font-size: 57px;
-      line-height: 103px;
-      margin: 0 0 75px;
+      width: 671px;
+      font-size: 67px;
+      line-height: 122px;
+      margin: 0 0 87px;
     }
   }
 }
