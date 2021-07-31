@@ -52,28 +52,31 @@ h1 {
 
 .h1_search {
   font-family: $font_family2;
-  font-weight: 400;
-  color: $font_color;
-  font-weight: 400;
-  font-size: 29px;
-  line-height: 58px;
-  margin: 0 0 40px;
+  font-weight: 700;
+  color: $font_color2;
+  font-size: 42px;
+  line-height: 60px;
+  margin: 0 0 31px;
   text-align: center;
+  text-transform: uppercase;
   @media (min-width: 1200px) {
+    width: 671px;
     text-align: left;
     font-size: 50px;
-    line-height: 90px;
+    line-height: 78px;
     margin: 0 0 75px;
   }
   @media (min-width: 1500px) {
-    font-size: 58px;
-    line-height: 103px;
-    margin: 0 0 96px;
+    width: 671px;
+    font-size: 57px;
+    line-height: 95px;
+    margin: 0 0 75px;
   }
   @media (min-width: 1920px) {
-    font-size: 58px;
-    line-height: 103px;
-    margin: 0 0 96px;
+    width: 671px;
+    font-size: 61px;
+    line-height: 122px;
+    margin: 0 0 87px;
   }
 }
 
