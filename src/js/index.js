@@ -50,7 +50,7 @@ $(function () {
           margin: 23
         },
         992: {
-          margin: 40
+          margin: 60
         },
         1200: {
           margin: 56
@@ -216,7 +216,7 @@ $(function () {
           margin: 23
         },
         992: {
-          margin: 40
+          margin: 60
         },
         1200: {
           margin: 56

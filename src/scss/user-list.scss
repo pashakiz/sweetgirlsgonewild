@@ -320,7 +320,7 @@
 }
 
 .user-list-extra {
-  width: 290px;
+  width: 100%;
   display: flex;
   flex-wrap: wrap;
   justify-content: space-between;
@@ -328,9 +328,6 @@
   margin: 30px auto 0;
   @media (min-width: 348px) {
     justify-content: space-around;
-  }
-  @media (min-width: 992px) {
-    width: 796px;
   }
   @media (min-width: 1200px) {
     width: 100%;
