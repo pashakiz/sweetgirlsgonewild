@@ -39,25 +39,48 @@ $(function () {
     });
 
     //custom sliders
+    owlInit('.user-list', {
+      loop: false,
+      dots: true,
+      items: 1,
+      margin: 23,
+      autoWidth: true,
+      responsive: {
+        320: {
+          margin: 23
+        },
+        992: {
+          margin: 40
+        },
+        1200: {
+          margin: 56
+        },
+      }
+    });
     owlInit('.user-list-extra', {
       loop: true,
       dots: true,
       items: 1,
-      margin: 17,
+      margin: 25,
       autoWidth: true,
       responsive: {
         320: {
           dots: true,
           items: 2,
-          margin: 12
+          margin: 25
         },
         992: {
-          margin: 48
+          margin: 35
         },
         1200: {
           dots: false,
           items: 4,
           margin: 48
+        },
+        1500: {
+          dots: false,
+          items: 4,
+          margin: 114
         },
       }
     });
@@ -91,7 +114,10 @@ $(function () {
       items: 7,
       margin: 22
     });
-    resizeOwlDots('.up-slider');
+
+    if ( document.querySelector('.up-slider') ) {
+      resizeOwlDots('.up-slider');
+    }
 
     //gallery on desktop
     $('.user-profile-gallery').on('click', '.user-profile-gallery__img', function () {
@@ -173,25 +199,49 @@ $(function () {
 
   $(window).resize(function () {
     owlInitProfile('.up-slider');
+    owlInit('.user-profile-gallery', {
+      loop: false,
+      dots: false,
+      items: 7,
+      margin: 22
+    });
+    owlInit('.user-list', {
+      loop: false,
+      dots: true,
+      items: 1,
+      margin: 23,
+      autoWidth: true,
+      responsive: {
+        320: {
+          margin: 23
+        },
+        992: {
+          margin: 40
+        },
+        1200: {
+          margin: 56
+        },
+      }
+    });
     owlInit('.user-list-extra', {
       loop: true,
       dots: true,
       items: 1,
-      margin: 17,
+      margin: 25,
       autoWidth: true,
       responsive: {
         320: {
           dots: true,
           items: 2,
-          margin: 12
+          margin: 25
         },
         992: {
-          margin: 48
+          margin: 35
         },
         1200: {
           dots: false,
           items: 4,
-          margin: 48
+          margin: 114
         },
       }
     });
